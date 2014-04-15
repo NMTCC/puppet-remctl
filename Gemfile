@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rake', :require => false
-gem 'puppet', :require => false
+puppetversion = ENV['PUPPET_VERSION']
+gem 'puppet', puppetverion, :require => false
 gem 'rspec-puppet', :require => false
-gem 'puppetlabs_spec_helper', :require => false
+gem 'puppetlabs_spec_helper', '>=0.1.0', :require => false
 
